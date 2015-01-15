@@ -1,0 +1,32 @@
+<template name="pollSubmit">
+  <form class="main form">
+    <div class="form-group {{errorClass 'title'}}">
+      <label class="control-label" for="title">Ask a question</label>
+      <div class="controls">
+          <input name="title" id="title" type="text" value="" placeholder="type your question" class="form-control"/>
+          <span class="help-block">{{errorMessage 'title'}}</span>
+      </div>
+    </div>
+    <div class="form-group {{errorClass 'options'}}">
+      <label class="control-label" for="title">Answers</label>
+      {{#each pollOptions}}
+      <div class="controls">
+        <div class="row">
+          <div class="col-xs-4">
+            <input name="option" type="text" value="" placeholder="option" class="form-control"/>
+          </div>
+        </div> 
+        <div class="row">
+          <span class="help-block">{{errorMessage 'title'}}</span>
+        </div>
+      </div>
+      {{/each}}
+      <div class="btn-toolbar">
+        <button type="button" class="add-option btn btn-default btn-xs" title="Add option" aria-label="Left Align">
+          <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+        </button>
+     </div>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-primary"/>
+  </form>
+</template>

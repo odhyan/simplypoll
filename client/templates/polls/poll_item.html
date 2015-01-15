@@ -1,0 +1,31 @@
+<template name="pollItem"> 
+  <div class="poll">
+    <div class="poll-content">
+      <div class="clearfix">
+        <div class="vote-count bg-primary pull-left">
+          <div class="number">{{voteCount}}</div>
+          <div class="text">{{pluralize voteCount 'vote'}}</div>
+        </div>
+        <div class="poll-info pull-left">
+          <p class="title">
+            <a href="{{pathFor 'pollPage'}}">{{title}}</a>
+          </p>
+          <p class="author">
+            Posted {{livestamp submitted}} by {{author}} 
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="optionItem">
+  <div class="option-item">
+    <button type="button" class="choose-option btn btn-lg btn-block" data-pollid="{{../_id}}" data-optionid="{{this.id}}">{{this.option}}</button>
+  </div>
+</template>
+
+<template name="pollResult">
+  <canvas id="chart{{_id}}" width="400" height="400"></canvas>
+</template>

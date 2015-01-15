@@ -1,0 +1,145 @@
+html, body {
+  font: 14px/16px 'Helvetica Neue', 'Helvetica', 'Arial';
+  height: 100%;
+  color: #333;
+}
+
+button {
+  outline: none !important;
+}
+
+.jumbotron h2 {
+  font-size: 30px;
+  line-height: 48px;
+}
+
+.btn {
+  border-radius: 3px !important;
+}
+
+.container {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  position:relative;
+}
+
+.container .footer {
+  width: 100%;
+  height: 60px;
+  position:absolute;
+  bottom:0;
+  left:0;
+  text-align: center;
+}
+
+.navbar {
+  border: none;
+}
+
+.navbar-brand {
+  padding-top: 4px !important;
+  padding-left: 0 !important;
+}
+
+.navbar-brand img {
+  width: 200px;
+}
+
+.btn-default {
+  background: #eee;
+}
+
+.btn-default:hover {
+  background: #ccc;
+  border-color: #ccc;
+}
+
+.bg-primary,
+.btn-primary {
+  background: #8a9915;
+  border-color: #8a9915;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #5f6b00;
+  border-color: #5f6b00;
+}
+
+a {
+  color: #8a9915;
+}
+
+
+a:hover,
+a:focus {
+  color: #5f6b00;
+}
+
+#main {
+  padding: 0 4px;
+}
+
+label.control-label {
+  margin-bottom: 8px;
+}
+
+.add-option .glyphicon-plus {
+  color: #555;
+}
+
+.poll {
+  margin-bottom: 20px;
+}
+
+.options .option-item {
+  max-width: 400px;
+  margin-bottom: 16px;
+}
+
+.options .option-item button:hover {
+  background: #8a9915;
+  color: #fff;
+}
+
+.poll-content .vote-count {
+  padding: 4px 0;
+  border-radius: 3px;
+  margin-right: 8px;
+  width: 48px;
+  text-align: center;
+}
+
+.poll-content .vote-count .number {
+  text-align: center;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: bold;
+} 
+
+.poll-content .vote-count .text {
+  font-size: 12px;
+}
+
+.poll-content .poll-info {
+  padding-top: 2px;
+}
+
+.poll-content .poll-info .title {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.poll-content .poll-info .author {
+  font-size: 13px;
+  color: #777;
+}
+
+.poll-content .result .box:nth-child(1) {
+  background: red;
+}
+
+.poll-content .result .box:nth-child(2) {
+  background: green;
+}

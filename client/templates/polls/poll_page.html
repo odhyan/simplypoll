@@ -1,0 +1,24 @@
+<template name="pollPage">
+  {{> pollItem}}
+
+  <div class="options-wrapper">
+    {{#if hasVoted}}
+      <div class="result">
+        {{> pollResult}}
+      </div>
+    {{else}}
+      <ul class="options">
+        {{#each options}}
+          {{> optionItem}}
+        {{/each}}
+      </ul>
+    {{/if}}
+  </div>
+
+  <div class="notice">
+    {{#if currentUser}}
+    {{else}}
+      <div class="alert alert-info">Please login to vote</div>
+    {{/if}}
+  </div>
+</template>
