@@ -23,7 +23,7 @@ Template.pollSubmit.events({
       };
   		
   		var errors = validatePoll(poll);
-  		if(errors.title || errors.url) {
+  		if(errors.title || errors.options) {
   			return Session.set('pollSubmitErrors', errors);
   		}
 		

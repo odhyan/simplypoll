@@ -71,7 +71,6 @@ a {
   color: #8a9915;
 }
 
-
 a:hover,
 a:focus {
   color: #5f6b00;
@@ -142,4 +141,12 @@ label.control-label {
 
 .poll-content .result .box:nth-child(2) {
   background: green;
+}
+
+.poll-form .controls {
+  margin-bottom: 8px;
+}
+
+.has-error .help-block {
+  font-style: italic;
 }

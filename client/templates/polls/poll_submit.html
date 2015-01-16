@@ -1,5 +1,5 @@
 <template name="pollSubmit">
-  <form class="main form">
+  <form class="main poll-form">
     <div class="form-group {{errorClass 'title'}}">
       <label class="control-label" for="title">Ask a question</label>
       <div class="controls">
@@ -13,19 +13,19 @@
       <div class="controls">
         <div class="row">
           <div class="col-xs-4">
-            <input name="option" type="text" value="" placeholder="option" class="form-control"/>
+            <input name="option" type="text" value="" placeholder="option" class="form-control" maxlength="40"/>
           </div>
         </div> 
-        <div class="row">
-          <span class="help-block">{{errorMessage 'title'}}</span>
-        </div>
       </div>
       {{/each}}
       <div class="btn-toolbar">
         <button type="button" class="add-option btn btn-default btn-xs" title="Add option" aria-label="Left Align">
           <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
         </button>
-     </div>
+      </div>
+      <div class="controls">
+        <span class="help-block">{{errorMessage 'options'}}</span>
+      </div>
     </div>
     <input type="submit" value="Submit" class="btn btn-primary"/>
   </form>
