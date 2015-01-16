@@ -57,14 +57,14 @@ button {
 
 .bg-primary,
 .btn-primary {
-  background: #8a9915;
-  border-color: #8a9915;
+  background: #5b90bf;
+  border-color: #5b90bf;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background: #5f6b00;
-  border-color: #5f6b00;
+  background: #5181ab;
+  border-color: #5181ab;
 }
 
 a {
@@ -73,7 +73,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #5f6b00;
+  color: #487398;
   text-decoration: none;
 }
 
@@ -99,7 +99,7 @@ label.control-label {
 }
 
 .options .option-item button:hover {
-  background: #8a9915;
+  background: #5181ab;
   color: #fff;
 }
 
@@ -134,14 +134,6 @@ label.control-label {
 .poll-content .poll-info .author {
   font-size: 13px;
   color: #777;
-}
-
-.poll-content .result .box:nth-child(1) {
-  background: red;
-}
-
-.poll-content .result .box:nth-child(2) {
-  background: green;
 }
 
 .poll-form .controls {
