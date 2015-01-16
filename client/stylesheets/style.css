@@ -68,12 +68,13 @@ button {
 }
 
 a {
-  color: #8a9915;
+  color: #555;
 }
 
 a:hover,
 a:focus {
   color: #5f6b00;
+  text-decoration: none;
 }
 
 #main {
