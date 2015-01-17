@@ -1,6 +1,6 @@
 <template name="header">
   <nav class="navbar navbar-custom" role="navigation">
-    <div class="container-fluid">
+    <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
           <span class="sr-only">Toggle navigation</span>
@@ -9,7 +9,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="{{pathFor 'home'}}">
-          <img src="/logo.png" alt="simplypoll"/>
+          <img src="/img/logo.png" alt="simplypoll"/>
         </a>
       </div>
       <div class="collapse navbar-collapse" id="navigation">
@@ -21,7 +21,7 @@
             <a href="{{pathFor 'newPolls'}}">New</a>
           </li>
           {{#if currentUser}}
-          <li>
+          <li class="{{activeRouteClass 'pollSubmit'}}">
             <a href="{{pathFor 'pollSubmit'}}">Create Poll</a>
           </li>
           <!--

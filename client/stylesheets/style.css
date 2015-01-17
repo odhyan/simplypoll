@@ -1,5 +1,5 @@
 html, body {
-  font: 14px/16px 'Helvetica Neue', 'Helvetica', 'Arial';
+  font: 14px/16px 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial';
   height: 100%;
   color: #333;
 }
@@ -17,33 +17,59 @@ button {
   border-radius: 3px !important;
 }
 
-.container {
+body > .content-wrapper {
+  height: auto;
   min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  position:relative;
 }
 
-.container .footer {
+.content-wrapper .container #main {
+  padding-bottom: 60px;
+}
+
+.footer {
   width: 100%;
   height: 60px;
-  position:absolute;
-  bottom:0;
-  left:0;
+  margin-top: -60px;
+  position: relative;
   text-align: center;
 }
 
-.navbar {
+.navbar-custom {
   border: none;
+  border-bottom: 1px solid #e5e5e5;
+  border-radius: 0;
+  padding: 8px 0;
+  background: #f5f8fa;
 }
 
 .navbar-brand {
+  margin-left: 0 !important;
   padding-top: 4px !important;
   padding-left: 0 !important;
 }
 
 .navbar-brand img {
   width: 200px;
+}
+
+.navbar-nav > li > a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #777;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus,
+.navbar-nav > li.active > a {
+  background: none;
+  color: #487398;
+}
+
+.nav .open > a, 
+.nav .open > a:hover, 
+.nav .open > a:focus {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .btn-default {
