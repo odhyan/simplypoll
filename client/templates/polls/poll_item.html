@@ -11,7 +11,7 @@
             <a href="{{pathFor 'pollPage'}}">{{title}}</a>
           </p>
           <p class="author">
-            Posted {{livestamp submitted}} by {{author}} 
+            Posted {{livestamp submitted}} by <a href="{{pathFor 'userPage' username=author}}">{{author}}</a> 
           </p>
         </div>
         
