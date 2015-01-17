@@ -32,6 +32,7 @@ body > .content-wrapper {
   margin-top: -60px;
   position: relative;
   text-align: center;
+  color: #777;
 }
 
 .navbar-custom {
@@ -95,6 +96,10 @@ body > .content-wrapper {
 
 a {
   color: #555;
+}
+
+a.primary {
+  color: #333;
 }
 
 a:hover,
