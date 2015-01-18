@@ -1,10 +1,23 @@
 <template name="userPage">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h3 class="panel-title">{{username}}</h3>
+  <div class="user-page row">
+    <div class="user-info col-md-4">
+      <h3>{{user.username}}</h3>
+      <h5>{{user.karma}} karma points</h5>
+      <h6>Joined on {{formatDate user.createdAt}}</h6>
     </div>
-    <div class="panel-body">
-      Karma: {{karma}}
+    <div class="user-polls col-md-8">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Polls created by {{user.username}}</h3>
+        </div>
+        <div class="panel-body">
+          <div class="polls">
+          {{#each polls}} 
+            {{> pollItem}}
+          {{/each}}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>

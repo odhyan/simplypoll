@@ -174,3 +174,7 @@ label.control-label {
 .has-error .help-block {
   font-style: italic;
 }
+
+.user-page .user-info h3 {
+  margin-top: 0;
+}

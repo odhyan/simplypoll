@@ -6,3 +6,7 @@ UI.registerHelper('pluralize', function(n, thing) {
     return thing + 's'; 
   }
 });
+
+UI.registerHelper('formatDate', function(date) {
+  return moment(date).format('MMM D, YYYY');
+});
