@@ -29,7 +29,8 @@ Meteor.publish('userPolls', function(username) {
 
 Meteor.publish('topUsers', function() {
   return Meteor.users.find({}, {
-    sort: ['karma', 'desc'],
+    sort: {karma: -1},
+    limit: 100,
     fields: {
       username: 1,
       karma: 1
