@@ -30,6 +30,9 @@
           </li>
           -->
           {{/if}}
+          <li class="{{activeRouteClass 'leaderboard'}}">
+            <a href="{{pathFor 'leaderboard'}}">Leaderboard</a>
+          </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           {{> loginButtons}}

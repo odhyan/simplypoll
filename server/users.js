@@ -1,6 +1,4 @@
 Accounts.onCreateUser(function(options, user) {
-  user.profile = { 
-    karma: 0
-  };
+  user.karma = 0;
   return user;
 });

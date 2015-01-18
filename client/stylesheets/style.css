@@ -17,6 +17,10 @@ button {
   border-radius: 3px !important;
 }
 
+.panel {
+  border-radius: 3px !important;
+}
+
 body > .content-wrapper {
   height: auto;
   min-height: 100%;
@@ -177,4 +181,26 @@ label.control-label {
 
 .user-page .user-info h3 {
   margin-top: 0;
+}
+
+.leaderboard {
+  width: 33%;
+  margin: 0 auto;
+}
+
+.leaderboard .panel-heading {
+  text-align: center;
+}
+
+.leaderboard table th.username,
+.leaderboard table td.username {
+  text-align: center;
+}
+
+.leaderboard table th.rank,
+.leaderboard table td.rank,
+.leaderboard table th.karma,
+.leaderboard table td.karma {
+  text-align: right;
+  width: 40px;
 }

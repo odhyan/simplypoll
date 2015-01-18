@@ -26,3 +26,13 @@ Meteor.publish('userPolls', function(username) {
   check(username, String);
   return Polls.find({author: username});
 });
+
+Meteor.publish('topUsers', function() {
+  return Meteor.users.find({}, {
+    sort: ['karma', 'desc'],
+    fields: {
+      username: 1,
+      karma: 1
+    }
+  });
+});
