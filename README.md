@@ -1,1 +1,1 @@
-The simplest online polling app live at http://www.simplypoll.net/
+Simplypoll is an open-source, real-time online polling app built with <a href="https://www.meteor.com/">Meteor</a>
