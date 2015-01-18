@@ -11,11 +11,11 @@
           <h3 class="panel-title">Polls created by {{user.username}}</h3>
         </div>
         <div class="panel-body">
-          <div class="polls">
+          <ul class="poll-list">
           {{#each polls}} 
             {{> pollItem}}
           {{/each}}
-          </div>
+          </ul>
         </div>
       </div>
     </div>
