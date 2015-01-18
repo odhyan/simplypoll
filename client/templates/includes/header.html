@@ -20,9 +20,12 @@
           <li class="{{activeRouteClass 'newPolls'}}">
             <a href="{{pathFor 'newPolls'}}">New</a>
           </li>
+          <li class="{{activeRouteClass 'leaderboard'}}">
+            <a href="{{pathFor 'leaderboard'}}">Leaderboard</a>
+          </li>
           {{#if currentUser}}
-          <li class="{{activeRouteClass 'pollSubmit'}}">
-            <a href="{{pathFor 'pollSubmit'}}">Create Poll</a>
+          <li>
+            <a href="{{pathFor 'pollSubmit'}}" class="btn btn-default" role="button">Create Poll</a>
           </li>
           <!--
           <li class="dropdown">
@@ -30,9 +33,6 @@
           </li>
           -->
           {{/if}}
-          <li class="{{activeRouteClass 'leaderboard'}}">
-            <a href="{{pathFor 'leaderboard'}}">Leaderboard</a>
-          </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           {{> loginButtons}}

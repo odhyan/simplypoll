@@ -35,7 +35,7 @@ Template.pollResult.rendered = function() {
       }]
     };
 
-    Chart.defaults.global.scaleFontSize = 18;
+    Chart.defaults.global.scaleFontSize = 16;
     Chart.defaults.global.scaleLineWidth = 2;
     Chart.defaults.global.scaleLineColor = '#999';
     Chart.defaults.global.tooltipTemplate = "<%if (label){%><%=label%>: <%}%><%= value %> <%if(value == 1) {%>vote<%} else {%>votes<%}%>";

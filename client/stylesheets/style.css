@@ -1,7 +1,7 @@
 html, body {
   font: 14px/16px 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial';
   height: 100%;
-  color: #333;
+  color: #555;
 }
 
 ul, li {
@@ -26,22 +26,27 @@ button {
   border-radius: 3px !important;
 }
 
+.container {
+  width: 1000px;
+}
+
 body > .content-wrapper {
   height: auto;
   min-height: 100%;
 }
 
 .content-wrapper .container #main {
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 
 .footer {
   width: 100%;
-  height: 60px;
-  margin-top: -60px;
+  height: 80px;
+  margin-top: -80px;
   position: relative;
   text-align: center;
   color: #777;
+  padding-top: 20px;
 }
 
 .navbar-custom {
@@ -66,6 +71,8 @@ body > .content-wrapper {
   font-size: 16px;
   font-weight: 600;
   color: #777;
+  line-height: 16px;
+  margin-top: 2px;
 }
 
 .navbar-nav > li > a:hover,
@@ -73,6 +80,14 @@ body > .content-wrapper {
 .navbar-nav > li.active > a {
   background: none;
   color: #487398;
+}
+
+.navbar-nav > li > a.btn,
+.navbar-nav > li > a.btn:hover,
+.navbar-nav > li > a.btn:focus {
+  background: #008080;
+  color: white;
+  border: none;
 }
 
 .nav .open > a, 
@@ -107,8 +122,9 @@ a {
   color: #555;
 }
 
+.btn-primary,
 a.primary {
-  color: #333;
+  font-weight: 600;
 }
 
 a:hover,
@@ -208,4 +224,9 @@ label.control-label {
 .leaderboard table td.karma {
   text-align: right;
   width: 40px;
+}
+
+.leaderboard table th.rank,
+.leaderboard table th.karma {
+  padding-right: 0;
 }
