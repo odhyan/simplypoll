@@ -1,9 +1,15 @@
 <template name="userPage">
   <div class="user-page row">
     <div class="user-info col-md-4">
-      <h3>{{user.username}}</h3>
-      <h5>{{user.karma}} karma points</h5>
-      <h6>Joined on {{formatDate user.createdAt}}</h6>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title"><strong>{{user.username}}</strong></h3>
+        </div>
+        <div class="panel-body">
+          <p><strong>{{user.karma}} karma points</strong></p>
+          <p>Joined on {{formatDate user.createdAt}}</p>
+        </div>
+      </div>
     </div>
     <div class="user-polls col-md-8">
       <div class="panel panel-default">
