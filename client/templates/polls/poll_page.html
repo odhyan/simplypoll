@@ -1,6 +1,8 @@
 <template name="pollPage">
   <div class="poll-container">
-    {{> pollItem}}
+    <ul>
+      {{> pollItem}}
+    </ul>
 
     <div class="options-wrapper">
       {{#if hasVoted}}
