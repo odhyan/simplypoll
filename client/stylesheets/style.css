@@ -248,7 +248,7 @@ label.control-label {
 
 .leaderboard table th.username,
 .leaderboard table td.username {
-  text-align: center;
+  padding-left: 30px;
 }
 
 .leaderboard table th.rank,

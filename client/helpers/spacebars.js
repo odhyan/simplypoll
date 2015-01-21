@@ -10,3 +10,11 @@ UI.registerHelper('pluralize', function(n, thing) {
 UI.registerHelper('formatDate', function(date) {
   return moment(date).format('MMM D, YYYY');
 });
+
+UI.registerHelper('limitString', function(s, limit) {
+  if(s.length > limit) {
+    return s.substr(0, limit) + "...";
+  } else {
+    return s;
+  }
+});

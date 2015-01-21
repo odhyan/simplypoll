@@ -17,7 +17,7 @@
             {{#each topUsers}}
               <tr>
                 <td class="rank">{{rank}}</td>
-                <td class="username"><a href="{{pathFor 'userPage'}}">{{username}}</a></td>
+                <td class="username"><a href="{{pathFor 'userPage'}}">{{limitString username 17}}</a></td>
                 <td class="karma">{{karma}}</td>
               </tr>
             {{/each}}
